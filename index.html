@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Juarren Helgerson</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title">FreeCodeCamp Survey Form</h1>
+<p id="description">Thank you for talking the time to  help us improve the platform</p>
+<form id="survey-form" action="#">
+  <label for="name" id="name-label">Name<label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+  <label for="email" id="email-label">Email</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+  <label for="number" id="number-label">Age(optional)</label><br>
+  <input type="number" id="number" name="number" min="0" max="100" pattern="[0-9]{2}" title="please enter number" placeholder="Enter Age" required><br>
+    <label for="dropdown">Which option best describes your current role?</label><br>
+    <select id="dropdown" name="dropdown">
+      <option value="" selected>Select current role</option>
+      <option value="Student">Student</option>
+      <option value="Full time job">Full Time Job</option>
+      <option value="Full time Learner">Full Time Learner</option>
+      <option value="Perfer not to say">Perfer not to say</option>
+      <option value="Other">Other</option>
+    </select><br>
+    
+    <p id="radio">Would you recommed freeCodeCamp to a friend?</p>
+      <input type="radio" id="definitely" name="name" value="definitely">
+      <label for="definitely">Definitely</label><br>
+      <input type="radio" id="maybe" name="name" value="maybe">
+      <label for="maybe">Maybe</label><br>
+      <input type="radio" id="notsure" name="name" value="notsure">
+      <label for="notsure">Not Sure</label><br>
+
+    <label for="dropdown2">What is your favorite feature of freeCodeCamp?</label><br>
+    <select id="dropdown2" name="dropdown2">
+      <option value="" selected>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="open sourece">Open Source</option>
+    </select><br>
+
+    <p id="checkbox">What would you like to see improved? (check all that apply)</p>
+      <input type="checkbox" id="value1" name="value1" value="1">
+      <label for="value1">Front-end Projects</label><br>
+    
+      <input type="checkbox" id="value2" name="value2" value="2">
+      <label for="value2">Back-end Projects</label><br>
+    
+      <input type="checkbox" id="value3" name="value3" value="3">
+      <label for="value3">Data Visualization</label><br>
+    
+      <input type="checkbox" id="value4" name="value4" value="4">
+      <label for="value4">Challenges</label><br>
+    
+      <input type="checkbox" id="value5" name="value5" value="5">
+      <label for="value5">Open Source Community</label><br>
+    
+      <input type="checkbox" id="value6" name="value6" value="6">
+      <label for="value6">Gitter help rooms</label><br>
+    
+      <input type="checkbox" id="value7" name="value7" value="7">
+      <label for="value7">Videos</label><br>
+    
+      <input type="checkbox" id="value8" name="value8" value="8">
+      <label for="value8">City Meetups</label><br>
+    
+      <input type="checkbox" id="value9" name="value9" value="9">
+      <label for="value9">Wiki</label><br>
+    
+      <input type="checkbox" id="value10" name="value10" value="10">
+      <label for="value10">Forum</label><br>
+    
+      <input type="checkbox" id="value11" name="value11" value="11">
+      <label for="value11">Additional Courses</label><br>
+
+    <p id="textarea">Any comments or suggestions?</p>
+      <textarea  placeholder="Enter your comments here..." cols="80" rows="3"></textarea><br>
+     
+      <button type="submit" id="submit">Submit</button>
+
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
